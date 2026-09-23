@@ -1,0 +1,96 @@
+/* Rodape.css */
+.rodape-container {
+    background: linear-gradient(180deg, rgba(17,24,39,0.98), rgba(15,23,42,0.98));
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 36px 6% 18px;
+    color: var(--text);
+    font-family: var(--sans);
+}
+
+.rodape-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.rodape-info,
+.rodape-links {
+    flex: 1;
+    min-width: 220px;
+}
+
+.rodape-info h3 {
+    color: var(--text-h);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rodape-info p,
+.rodape-links p,
+.rodape-equipe {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #f0d7bb;
+}
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-links h4 {
+    color: var(--text-h);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.rodape-equipe {
+    font-size: 0.85rem;
+}
+
+.equipe-lista {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.rodape-bottom {
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    flex-wrap: wrap;
+}
+
+.social-icons {
+    display: flex;
+    gap: 14px;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.social-icons i { transition: transform 0.18s ease, color 0.18s ease }
+.social-icons i:hover { color: var(--accent); transform: translateY(-3px); cursor: pointer }
+
+@media (max-width: 700px) {
+    .rodape-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
